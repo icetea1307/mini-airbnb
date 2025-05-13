@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mini-Airbnb</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<h1>Liste des logements</h1>
+<div class="logements">
+    <% logements.forEach(logement => { %>
+    <div class="card">
+        <img src="<%= logement.image %>" alt="<%= logement.titre %>">
+        <h2><%= logement.titre %></h2>
+        <p><%= logement.prix %>€ / nuit</p>
+        <a href="/logement/<%= logement.id %>">Voir</a>
+    </div>
+    <% }) %>
+</div>
+</body>
+</html>
