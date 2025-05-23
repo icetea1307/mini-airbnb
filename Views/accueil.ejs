@@ -1,58 +1,66 @@
-<%- include('partials/header') %>
-
-<div class="hero-section">
-    <div class="hero-content">
-        <h1 class="hero-title">Trouvez votre logement idéal</h1>
-        <p class="hero-subtitle">Découvrez des hébergements uniques partout en France</p>
-    </div>
-</div>
-
-<div class="container">
-    <section class="logements-section">
-        <div class="section-header">
-            <h2 class="section-title">Nos logements disponibles</h2>
-            <p class="section-subtitle"><%= logements.length %> logements trouvés</p>
-        </div>
-        
-        <div class="logements-grid">
-            <% logements.forEach(logement => { %>
-                <div class="logement-card">
-                    <a href="/logement/<%= logement.id %>" class="card-link">
-                        <div class="card-image">
-                            <img src="<%= logement.image %>" alt="<%= logement.titre %>" loading="lazy">
-                            <div class="card-badge">
-                                <i class="fas fa-star"></i>
-                                <span>4.8</span>
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <div class="card-header">
-                                <h3 class="card-title"><%= logement.titre %></h3>
-                                <div class="card-location">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span><%= logement.ville %></span>
-                                </div>
-                            </div>
-                            <div class="card-details">
-                                <div class="card-capacity">
-                                    <i class="fas fa-users"></i>
-                                    <span><%= logement.capacite %> voyageurs</span>
-                                </div>
-                                <div class="card-rooms">
-                                    <i class="fas fa-bed"></i>
-                                    <span><%= logement.chambres %> chambre<%= logement.chambres > 1 ? 's' : '' %></span>
-                                </div>
-                            </div>
-                            <div class="card-price">
-                                <span class="price-amount"><%= logement.prix %>€</span>
-                                <span class="price-period">par nuit</span>
-                            </div>
-                        </div>
-                    </a>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-Airbnb</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <a href="/" class="logo">Mini-Airbnb</a>
+            <div class="search-bar">
+                <input type="text" placeholder="Où allez-vous ?">
+                <input type="date">
+                <input type="date">
+                <button>🔍</button>
+            </div>
+            <div class="user-menu">
+                <div class="user-profile">
+                    <span>☰</span>
+                    <span>👤</span>
                 </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="filters-bar">
+            <div class="filter-chip active">Tous</div>
+            <div class="filter-chip">Maisons</div>
+            <div class="filter-chip">Appartements</div>
+            <div class="filter-chip">Villas</div>
+        </div>
+
+        <div class="listings-grid">
+            <% logements.forEach(logement => { %>
+                <a href="/logement/<%= logement.id %>" class="listing-card">
+                    <div class="listing-image-container">
+                        <img src="<%= logement.image %>" alt="<%= logement.titre %>" class="listing-image">
+                        <button class="favorite-btn">♡</button>
+                    </div>
+                    <div class="listing-info">
+                        <div class="rating">
+                            <span class="rating-star">★</span>
+                            <span class="rating-score">4.8</span>
+                        </div>
+                        <div class="listing-location"><%= logement.lieu %></div>
+                        <div class="listing-details"><%= logement.type || 'Logement entier' %></div>
+                        <div class="listing-price">
+                            <span class="price-amount"><%= logement.prix %> €</span>
+                            <span class="price-period">par nuit</span>
+                        </div>
+                    </div>
+                </a>
             <% }) %>
         </div>
-    </section>
-</div>
+    </main>
 
-<%- include('partials/footer') %>
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-text">© 2025 Mini-Airbnb. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
