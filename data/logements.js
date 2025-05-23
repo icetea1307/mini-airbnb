@@ -60,7 +60,6 @@ const logements = [
       lng: 4.8357
     }
   },
-  {
     id: 5,
     titre: "Maison de campagne - Vignoble",
     description: "Charmante maison au cœur des vignes. Dégustation de vins incluse, piscine, grande terrasse. Parfait pour un séjour œnologique.",
@@ -74,7 +73,54 @@ const logements = [
       lat: 44.8378,
       lng: -0.5792
     }
-  }
+     
+      id: 7,
+      titre: "Maison au bord de la plage",
+      description: "Maison a côter de la plage a même pas 3 minutes a pied.Elle a été renovée en 2022",
+      prix: 170,
+      ville: "Biscarrosse",
+      image: "https://th.bing.com/th/id/R.4c042f1f01462aa9fe8b00f8147405bd?rik=SUuhZNmti1L6vw&pid=ImgRaw&r=0",
+      capacite: 4,
+      chambres: 2,
+      equipements: ["WiFi", "lave-linge" ,"barbecue", "cuisine", "espace extérieur"],
+      coordonnees: { lat: 43.4567, lng: 5.3457 }
+      }
+    {
+      id: 8,
+      titre: "Maison dans la forêt avec vue panoramique",
+      description: "Loin des bruits et de l'agitation de la ville, nichée au cœur d’une forêt de châtaigniers vieille de plus d’un siècle.",
+      prix: 110,
+      ville: "Roquefère",
+      image: "https://a0.muscache.com/im/pictures/miso/Hosting-867130267614916977/original/6d086530-58a4-4543-bb0a-868e715aa871.jpeg?im_w=720",
+      capacite: 6,
+      chambres: 3,
+      equipements: ["WiFi", "Piscine", "cheminée", "cuisine"],
+      coordonnees: { lat: 42.7650, lng: 5.8687 }
+    }
+    {
+      id: 9,
+      titre: "Logement entier : appartement",
+      description: "Appartement spacieux entourer d'un copropriété de 5 appartements et d'un jolie boutique",
+      prix: 159,
+      ville: "Lille",
+      image: "https://a0.muscache.com/im/pictures/airflow/Hosting-16284708/original/384c0366-d6ba-44cc-a0f7-26d05addaa58.jpg?im_w=720",
+      capacite: 2,
+      chambres: 1,
+      equipements: ["WiFi", "Piscine","Vue sur la cour", "TV avec abonnement standard au câble", "Four à micro-ondes"],
+      coordonnees: { lat: 44.8640, lng: 4.8369 }
+    }
+    {
+      id: 10,
+      titre: "Logement entier : villa",
+      description: "Détendez-vous dans ce logement unique et tranquille. Maison sur les hauteurs de la Milliere à Marseille 11eme",
+      prix: 220,
+      ville: "Marseille",
+      image: "https://a0.muscache.com/im/pictures/9b6f8c1b-17ce-4a3e-a8d0-1c2ccbc512d1.jpg?im_w=1200",
+      capacite: 10,
+      chambres: 5,
+      equipements: ["WiFi", "Piscine", "TV HD 35 pouces", "Piscine privée", "Lave-linge (Gratuit) dans le logement", "Animaux acceptés"],
+      coordonnees: { lat: 42.7640, lng: 4.8367 }
+    }
 ];
 
 module.exports = logements;
