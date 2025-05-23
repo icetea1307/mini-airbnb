@@ -1,6 +1,6 @@
 // Données des logements
 const logements = [
-{
+  {
     id: 1,
     titre: "Appartement cosy au centre-ville",
     description: "Magnifique appartement de 2 pièces en plein cœur de la ville. Idéal pour un séjour romantique ou professionnel. Proche de tous les commerces et transports.",
@@ -11,11 +11,11 @@ const logements = [
     chambres: 1,
     equipements: ["WiFi", "Cuisine équipée", "Balcon", "Parking"],
     coordonnees: {
-    lat: 48.8566,
-    lng: 2.3522
+      lat: 48.8566,
+      lng: 2.3522
     }
-},
-{
+  },
+  {
     id: 2,
     titre: "Villa avec piscine - Vue mer",
     description: "Superbe villa avec piscine privée et vue imprenable sur la mer. 4 chambres, jardin tropical, parfait pour des vacances en famille ou entre amis.",
@@ -26,11 +26,11 @@ const logements = [
     chambres: 4,
     equipements: ["Piscine", "WiFi", "Barbecue", "Jardin", "Vue mer"],
     coordonnees: {
-    lat: 43.7102,
-    lng: 7.2620
+      lat: 43.7102,
+      lng: 7.2620
     }
-},
-{
+  },
+  {
     id: 3,
     titre: "Chalet montagne - Ski aux pieds",
     description: "Chalet traditionnel situé au pied des pistes. Cheminée, sauna, vue panoramique sur les montagnes. Parfait pour des vacances au ski.",
@@ -41,11 +41,11 @@ const logements = [
     chambres: 3,
     equipements: ["Cheminée", "Sauna", "WiFi", "Parking", "Ski aux pieds"],
     coordonnees: {
-    lat: 45.9237,
-    lng: 6.8694
+      lat: 45.9237,
+      lng: 6.8694
     }
-},
-{
+  },
+  {
     id: 4,
     titre: "Loft moderne - Quartier artistique",
     description: "Loft spacieux et moderne dans le quartier des artistes. Hauts plafonds, verrière, décoration contemporaine. Idéal pour un séjour culturel.",
@@ -56,11 +56,11 @@ const logements = [
     chambres: 2,
     equipements: ["WiFi", "Cuisine moderne", "Climatisation", "Terrasse"],
     coordonnees: {
-    lat: 45.7640,
-    lng: 4.8357
+      lat: 45.7640,
+      lng: 4.8357
     }
-},
-{
+  },
+  {
     id: 5,
     titre: "Maison de campagne - Vignoble",
     description: "Charmante maison au cœur des vignes. Dégustation de vins incluse, piscine, grande terrasse. Parfait pour un séjour œnologique.",
@@ -71,10 +71,10 @@ const logements = [
     chambres: 3,
     equipements: ["Piscine", "Dégustation vins", "WiFi", "Barbecue", "Jardin"],
     coordonnees: {
-    lat: 44.8378,
-    lng: -0.5792
+      lat: 44.8378,
+      lng: -0.5792
     }
-}
+  }
 ];
 
 module.exports = logements;
