@@ -1,20 +1,58 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Mini-Airbnb</title>
-<link rel="stylesheet" href="/style.css">
-</head>
-<body>
-<h1>Liste des logements</h1>
-<div class="logements">
-    <% logements.forEach(logement => { %>
-    <div class="card">
-        <img src="<%= logement.image %>" alt="<%= logement.titre %>">
-        <h2><%= logement.titre %></h2>
-        <p><%= logement.prix %>€ / nuit</p>
-        <a href="/logement/<%= logement.id %>">Voir</a>
+<%- include('partials/header') %>
+
+<div class="hero-section">
+    <div class="hero-content">
+        <h1 class="hero-title">Trouvez votre logement idéal</h1>
+        <p class="hero-subtitle">Découvrez des hébergements uniques partout en France</p>
     </div>
-    <% }) %>
 </div>
-</body>
-</html>
+
+<div class="container">
+    <section class="logements-section">
+        <div class="section-header">
+            <h2 class="section-title">Nos logements disponibles</h2>
+            <p class="section-subtitle"><%= logements.length %> logements trouvés</p>
+        </div>
+        
+        <div class="logements-grid">
+            <% logements.forEach(logement => { %>
+                <div class="logement-card">
+                    <a href="/logement/<%= logement.id %>" class="card-link">
+                        <div class="card-image">
+                            <img src="<%= logement.image %>" alt="<%= logement.titre %>" loading="lazy">
+                            <div class="card-badge">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3 class="card-title"><%= logement.titre %></h3>
+                                <div class="card-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span><%= logement.ville %></span>
+                                </div>
+                            </div>
+                            <div class="card-details">
+                                <div class="card-capacity">
+                                    <i class="fas fa-users"></i>
+                                    <span><%= logement.capacite %> voyageurs</span>
+                                </div>
+                                <div class="card-rooms">
+                                    <i class="fas fa-bed"></i>
+                                    <span><%= logement.chambres %> chambre<%= logement.chambres > 1 ? 's' : '' %></span>
+                                </div>
+                            </div>
+                            <div class="card-price">
+                                <span class="price-amount"><%= logement.prix %>€</span>
+                                <span class="price-period">par nuit</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            <% }) %>
+        </div>
+    </section>
+</div>
+
+<%- include('partials/footer') %>

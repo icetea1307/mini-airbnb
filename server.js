@@ -1,33 +1,69 @@
+// Importation des modules
 const express = require('express');
-const app = express();
 const path = require('path');
+const logements = require('./data/logements');
 
-// Données fictives
-const logements = [
-{ id: 1, titre: 'Appartement cosy à Paris', prix: 120, image: '/img/paris.jpg', description: 'Proche du centre.' },
-{ id: 2, titre: 'Villa avec piscine à Nice', prix: 250, image: '/img/nice.jpg', description: 'Vue sur la mer.' },
-{ id: 3, titre: 'Chalet à Chamonix', prix: 180, image: '/img/chamonix.jpg', description: 'Parfait pour skier.' }
-];
+// Création de l'application Express
+const app = express();
+const PORT = process.env.PORT || 3000;
 
-// Config
+// Configuration du moteur de template EJS
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
-app.use(express.static('public'));
 
-// Routes
+// Middleware pour servir les fichiers statiques
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Route principale - Page d'accueil
 app.get('/', (req, res) => {
-res.render('accueil', { logements });
+  res.render('accueil', { 
+    logements: logements,
+    title: 'Mini-Airbnb - Trouvez votre logement idéal'
+  });
 });
 
+// Route pour la page de détail d'un logement
 app.get('/logement/:id', (req, res) => {
-const logement = logements.find(l => l.id == req.params.id);
-if (!logement) {
-    return res.status(404).send('Logement non trouvé');
-}
-res.render('detail', { logement });
+  const id = parseInt(req.params.id);
+  const logement = logements.find(l => l.id === id);
+  
+  if (!logement) {
+    return res.status(404).render('404', { 
+      title: 'Logement non trouvé' 
+    });
+  }
+  
+  res.render('detail', { 
+    logement: logement,
+    title: `${logement.titre} - Mini-Airbnb`
+  });
 });
 
-// Démarrer le serveur
-app.listen(3000, () => {
-console.log('Serveur en écoute sur http://localhost:3000');
+// Route pour l'API (bonus - retourne les données JSON)
+app.get('/api/logements', (req, res) => {
+  res.json(logements);
+});
+
+app.get('/api/logements/:id', (req, res) => {
+  const id = parseInt(req.params.id);
+  const logement = logements.find(l => l.id === id);
+  
+  if (!logement) {
+    return res.status(404).json({ error: 'Logement non trouvé' });
+  }
+  
+  res.json(logement);
+});
+
+// Gestion des erreurs 404
+app.use((req, res) => {
+res.status(404).render('404', {
+    title: 'Page non trouvée'
+});
+});
+
+// Démarrage du serveur
+app.listen(PORT, () => {
+console.log(`🏠 Serveur Mini-Airbnb démarré sur http://localhost:${PORT}`);
+console.log(`📋 Logements disponibles : ${logements.length}`);
 });
