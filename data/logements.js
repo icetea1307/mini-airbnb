@@ -99,7 +99,7 @@ const logements = [
     }
     {
       id: 9,
-      titre: "Logement entier : appartement",
+      titre: "Logement entier : appartement Lille",
       description: "Appartement spacieux entourer d'un copropriété de 5 appartements et d'un jolie boutique",
       prix: 159,
       ville: "Lille",
@@ -111,15 +111,75 @@ const logements = [
     }
     {
       id: 10,
-      titre: "Logement entier : villa",
+      titre: "Logement entier : villa Marseille",
       description: "Détendez-vous dans ce logement unique et tranquille. Maison sur les hauteurs de la Milliere à Marseille 11eme",
       prix: 220,
       ville: "Marseille",
       image: "https://a0.muscache.com/im/pictures/9b6f8c1b-17ce-4a3e-a8d0-1c2ccbc512d1.jpg?im_w=1200",
       capacite: 10,
       chambres: 5,
-      equipements: ["WiFi", "Piscine", "TV HD 35 pouces", "Piscine privée", "Lave-linge (Gratuit) dans le logement", "Animaux acceptés"],
+      equipements: ["WiFi", , "TV HD 35 pouces", "Piscine privée", "Lave-linge (Gratuit) dans le logement", "Animaux acceptés"],
       coordonnees: { lat: 42.7640, lng: 4.8367 }
+    }
+    {
+      id: 11,
+      titre: "Logement entier : appartement Argelès",
+      description: "Vue Mer à 180°C, accès direct plage 30 sec, à 2 min du Costa Blanca (Alimentation, boulangerie, pharmacie), à 5 min à pieds des plages privées et clubs nautiques",
+      prix: 115,
+      ville: "Argelès-sur-Mer",
+      image: "https://a0.muscache.com/im/pictures/miso/Hosting-1093986176413320634/original/368f26dd-a8bb-4c36-811d-5bea19abcf1c.jpeg?im_w=1200",
+      capacite: 4,
+      chambres: 2,
+      equipements: ["WiFi", "Piscine", "Télévision", "Accès partagé à la plage", "Cuisine"],
+      coordonnees: { lat: 42.7622, lng: 4.8227 }
+    }
+    {
+      id: 12,
+      titre: "Logement entier : appartement - Biarritz",
+      description: "Situé en plein coeur du centre ville de Biarritz, ce studio dispose d'un balcon face à la Grande Plage avec vue du Phare au Rocher de la Vierge et les Pyrénées en arrière plan.",
+      prix: 200,
+      ville: "Biarritz",
+      image: "https://a0.muscache.com/im/pictures/miso/Hosting-1398475593403755842/original/019d206c-1dcf-4d7b-b42f-cb6b0d2dca0c.jpeg?im_w=1200",
+      capacite: 2,
+      chambres: 1,
+      equipements: ["WiFi", "Piscine", "Télévision", "Cuisine", "Parking gratuit dans la rue"],
+      coordonnees: { lat: 45.9620, lng: 4.1357 }
+    }
+    {
+      id: 13,
+      titre: "Cabane perchée - Jurançon",
+      description: "À seulement quelques minutes du centre-ville de Pau, nichée au cœur des vignes du domaine La Paloma, découvrez une suite de luxe exceptionnelle avec une vue imprenable sur la majestueuse chaîne des Pyrénées",
+      prix: 285,
+      ville: "Pau",
+      image: "https://a0.muscache.com/im/pictures/airflow/Hosting-1235336076149222512/original/4ef42f15-9076-49dd-a042-68c8c37bbebb.jpg?im_w=720",
+      capacite: 2,
+      chambres: 1,
+      equipements: ["WiFi", "Climatisation : système split sans évacuation", "Arrière-cour privée", "TV HD avec Apple TV"],
+      coordonnees: { lat: 46.7640, lng: 5.8357 }
+    }
+    {
+      id: 14,
+      titre: "Logement entier : appartement - La Teste-de-Buch",
+      description: "Envie de calme et de nature à deux pas du lac ? Offrez-vous un séjour cocooning dans ce charmant studio de 15 m², niché dans un écrin de verdure à Cazaux, sur la commune de La Teste-de-Buch.",
+      prix: 59,
+      ville: "La Teste-de-Buch",
+      image: "https://a0.muscache.com/im/pictures/9790e964-ca7c-4328-9461-02899080a010.jpg?im_w=1200",
+      capacite: 2,
+      chambres: 1,
+      equipements: ["WiFi", "Arrière-cour privée – Clôture partielle", "parking", "télévision", "cuisine"],
+      coordonnees: { lat: 42.7848, lng: 4.2357 }
+    }
+    {
+      id: 15,
+      titre: "Logement entier : villa - Fillé",
+      description: "Maison de plein pied 165 m2. expo sud, terrasse, parking sécurisé. extérieur paysagé. dans joli village en bord de  rivière, randonnée, canoé, paddle,  gastronomie à proximité. ",
+      prix: 281,
+      ville: "Votre ville",
+      image: "https://a0.muscache.com/im/pictures/miso/Hosting-2200317/original/0c5b110f-1d77-4ab3-9732-010e997be510.jpeg?im_w=720",
+      capacite: 8,
+      chambres: 4,
+      equipements: ["WiFi", "parking", "Privé : patio ou balcon", "Cheminée", "Cuisine"],
+      coordonnees: { lat: 44.4640, lng: 6.8333 }
     }
 ];
 
