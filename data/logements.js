@@ -174,7 +174,7 @@ const logements = [
       titre: "Logement entier : villa - Fillé",
       description: "Maison de plein pied 165 m2. expo sud, terrasse, parking sécurisé. extérieur paysagé. dans joli village en bord de  rivière, randonnée, canoé, paddle,  gastronomie à proximité. ",
       prix: 281,
-      ville: "Votre ville",
+      ville: "Fillé",
       image: "https://a0.muscache.com/im/pictures/miso/Hosting-2200317/original/0c5b110f-1d77-4ab3-9732-010e997be510.jpeg?im_w=720",
       capacite: 8,
       chambres: 4,
