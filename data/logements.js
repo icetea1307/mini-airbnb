@@ -40,7 +40,7 @@ const logements = [
       lat: 43.7102,
       lng: 7.2620
     },
-    hôte: {
+    hote: {
     nom: "Gregory",
     photo: "https://a0.muscache.com/im/pictures/user/f2879ba8-d9c9-4d2c-9c58-23b314901b64.jpg?im_w=240"
   }
@@ -64,7 +64,7 @@ const logements = [
       lat: 45.9237,
       lng: 6.8694
     },
-    hôte: {
+    hote: {
     nom: "Virginie",
     photo: "https://a0.muscache.com/im/pictures/user/User-187657829/original/023ea9e6-a485-4091-b5b6-2c5ee6990b24.jpeg?im_w=240"
   }
@@ -87,7 +87,7 @@ const logements = [
       lat: 45.7640,
       lng: 4.8357
     },
-    hôte: {
+    hote: {
     nom: "Sanae",
     photo: "https://a0.muscache.com/im/pictures/user/27bbc1c2-ce34-4248-bd15-4f81224b12f6.jpg?im_w=240"
   }
@@ -154,7 +154,7 @@ const logements = [
       coordonnees: { lat: 43.3744, lng: 2.38197 
 
       },
-     hôte: {
+    hote: {
     nom: " Olivier",
     photo: "https://a0.muscache.com/im/pictures/user/12e05e97-ccd2-4859-bed6-0d175a59d3df.jpg?im_w=240"
   }
@@ -176,7 +176,7 @@ const logements = [
       coordonnees: { lat: 50.6270, lng: 3.0586 
 
       },
-    hôte: {
+    hote: {
     nom: " Yakubu",
     photo: "https://a0.muscache.com/im/pictures/user/User-517133359/original/5caf0e7b-9a35-45cb-8e77-6827d3f78d64.jpeg?im_w=240"
   }
@@ -199,7 +199,7 @@ const logements = [
       coordonnees: { lat: 43.2831, lng: 5.3523 
 
       },
-    hôte: {
+    hote: {
     nom: " Alexandra",
     photo: "https://a0.muscache.com/im/pictures/user/28d78b21-f4ba-48f7-bbf3-60b5f76596d0.jpg?im_w=240"
   }
@@ -221,7 +221,7 @@ const logements = [
       coordonnees: { lat: 42.5470, lng: 3.0290 
 
       },
-    hôte: {
+    hote: {
     nom: " Hélène",
     photo: "https://a0.muscache.com/im/pictures/user/0040132b-d7b0-43e3-ab41-0508f0aa898d.jpg?im_w=240"
     }
@@ -243,7 +243,7 @@ const logements = [
       coordonnees: { lat: 43.4810, lng: -1.5580 
 
       },
-    hôte: {
+    hote: {
     nom: "Sebastien",
     photo: "https://a0.muscache.com/im/pictures/user/c8b7a3d9-a246-4866-96ed-c810f00a9720.jpg?im_w=240"
     }
@@ -265,7 +265,7 @@ const logements = [
       coordonnees: { lat: 43.3333, lng: -0.9667
 
       },
-    hôte: {
+    hote: {
     nom: "Stephanie",
     photo: "https://a0.muscache.com/im/pictures/user/62b1343e-ad17-49e4-8ed4-55f6e518642d.jpg?im_w=240"
     }
@@ -287,7 +287,7 @@ const logements = [
       coordonnees: { lat: 44.6360, lng: -1.1578
 
       },
-    hôte: {
+    hote: {
     nom: "Cydric",
     photo: "https://a0.muscache.com/im/pictures/user/User-30262305/original/aabf4bfe-697b-4d57-8daf-a8a7f8af8614.jpeg?im_w=240"
     }
@@ -310,7 +310,7 @@ const logements = [
       coordonnees: { lat: 47.8982, lng: 0.1267 
 
       },
-    hôte: {
+    hote: {
         nom: "Gerald",
     photo: "https://a0.muscache.com/im/users/10256674/profile_pic/1391241394/original.jpg?im_w=240"
     }
