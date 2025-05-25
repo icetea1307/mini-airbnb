@@ -59,7 +59,7 @@ const logements = [
       lat: 45.7640,
       lng: 4.8357
     }
-  },
+  }
     id: 5,
     titre: "Maison de campagne - Vignoble",
     description: "Charmante maison au cœur des vignes. Dégustation de vins incluse, piscine, grande terrasse. Parfait pour un séjour œnologique.",
@@ -73,7 +73,7 @@ const logements = [
       lat: 44.8378,
       lng: -0.5792
     }
-     
+      {
       id: 7,
       titre: "Maison au bord de la plage",
       description: "Maison a côter de la plage a même pas 3 minutes a pied.Elle a été renovée en 2022",
