@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mini-Airbnb</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.css" />
 </head>
 <body>
     <header class="header">
         <div class="nav-container">
             <a href="/" class="logo">Mini-Airbnb</a>
             <form class="search-bar" method="GET" action="/">
-                <input type="text" name="ville" placeholder="Où allez-vous ?" value="<%= typeof ville !== 'undefined' ? ville : '' %>">
-                <input type="date" name="checkin">
-                <input type="date" name="checkout">
+                <input
+                    type="text"
+                    name="ville"
+                    placeholder="Où allez-vous ?"
+                    value="<%= typeof ville !== 'undefined' ? ville : '' %>"
+                />
+                <input type="date" name="checkin" />
+                <input type="date" name="checkout" />
                 <button type="submit">🔍</button>
             </form>
-                
+
             <div class="user-menu">
                 <div class="user-profile">
                     <span>☰</span>
@@ -29,31 +34,52 @@
     <main class="main-container">
         <div class="filters-bar">
             <a href="/" class="filter-chip <%= !type ? 'active' : '' %>">Tous</a>
-            <a href="/?type=maison<%= ville ? '&ville=' + ville : '' %>" class="filter-chip <%= type === 'maison' ? 'active' : '' %>">Maisons</a>
-            <a href="/?type=appartement<%= ville ? '&ville=' + ville : '' %>" class="filter-chip <%= type === 'appartement' ? 'active' : '' %>">Appartements</a>
-            <a href="/?type=villa<%= ville ? '&ville=' + ville : '' %>" class="filter-chip <%= type === 'villa' ? 'active' : '' %>">Villas</a>
-            <a href="/?type=studio<%= ville ? '&ville=' + ville : '' %>" class="filter-chip <%= type === 'studio' ? 'active' : '' %>">Studios</a>
+            <a
+                href="/?type=maison<%= ville ? '&ville=' + ville : '' %>"
+                class="filter-chip <%= type === 'maison' ? 'active' : '' %>"
+                >Maisons</a
+            >
+            <a
+                href="/?type=appartement<%= ville ? '&ville=' + ville : '' %>"
+                class="filter-chip <%= type === 'appartement' ? 'active' : '' %>"
+                >Appartements</a
+            >
+            <a
+                href="/?type=villa<%= ville ? '&ville=' + ville : '' %>"
+                class="filter-chip <%= type === 'villa' ? 'active' : '' %>"
+                >Villas</a
+            >
+            <a
+                href="/?type=studio<%= ville ? '&ville=' + ville : '' %>"
+                class="filter-chip <%= type === 'studio' ? 'active' : '' %>"
+                >Studios</a
+            >
         </div>
+
         <div class="listings-grid">
             <% logements.forEach(logement => { %>
-                <a href="/logement/<%= logement.id %>" class="listing-card">
-                    <div class="listing-image-container">
-                        <img src="<%= logement.image %>" alt="<%= logement.titre %>" class="listing-image">
-                        <button class="favorite-btn">♡</button>
+            <a href="/logement/<%= logement.id %>" class="listing-card">
+                <div class="listing-image-container">
+                    <img
+                        src="<%= logement.image[0] %>"
+                        alt="<%= logement.titre %>"
+                        class="listing-image"
+                    />
+                    <button class="favorite-btn">♡</button>
+                </div>
+                <div class="listing-info">
+                    <div class="rating">
+                        <span class="rating-star">★</span>
+                        <span class="rating-score">4.8</span>
                     </div>
-                    <div class="listing-info">
-                        <div class="rating">
-                            <span class="rating-star">★</span>
-                            <span class="rating-score">4.8</span>
-                        </div>
-                        <div class="listing-location"><%= logement.lieu %></div>
-                        <div class="listing-details"><%= logement.type || 'Logement entier' %></div>
-                        <div class="listing-price">
-                            <span class="price-amount"><%= logement.prix %> €</span>
-                            <span class="price-period">par nuit</span>
-                        </div>
+                    <div class="listing-location"><%= logement.ville %></div>
+                    <div class="listing-details"><%= logement.type || 'Logement entier' %></div>
+                    <div class="listing-price">
+                        <span class="price-amount"><%= logement.prix %> €</span>
+                        <span class="price-period">par nuit</span>
                     </div>
-                </a>
+                </div>
+            </a>
             <% }) %>
         </div>
     </main>
