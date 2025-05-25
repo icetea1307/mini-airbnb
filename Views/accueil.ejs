@@ -10,12 +10,13 @@
     <header class="header">
         <div class="nav-container">
             <a href="/" class="logo">Mini-Airbnb</a>
-            <div class="search-bar">
-                <input type="text" placeholder="Où allez-vous ?">
-                <input type="date">
-                <input type="date">
-                <button>🔍</button>
-            </div>
+            <form class="search-bar" method="GET" action="/">
+                <input type="text" name="ville" placeholder="Où allez-vous ?" value="<%= typeof ville !== 'undefined' ? ville : '' %>">
+                <input type="date" name="checkin">
+                <input type="date" name="checkout">
+                <button type="submit">🔍</button>
+            </form>
+                
             <div class="user-menu">
                 <div class="user-profile">
                     <span>☰</span>
@@ -27,12 +28,12 @@
 
     <main class="main-container">
         <div class="filters-bar">
-            <div class="filter-chip active">Tous</div>
-            <div class="filter-chip">Maisons</div>
-            <div class="filter-chip">Appartements</div>
-            <div class="filter-chip">Villas</div>
+            <a href="/" class="filter-chip <%= !type ? 'active' : '' %>">Tous</a>
+            <a href="/?type=maison<%= ville ? '&ville=' + ville : '' %>" class="filter-chip <%= type === 'maison' ? 'active' : '' %>">Maisons</a>
+            <a href="/?type=appartement<%= ville ? '&ville=' + ville : '' %>" class="filter-chip <%= type === 'appartement' ? 'active' : '' %>">Appartements</a>
+            <a href="/?type=villa<%= ville ? '&ville=' + ville : '' %>" class="filter-chip <%= type === 'villa' ? 'active' : '' %>">Villas</a>
+            <a href="/?type=studio<%= ville ? '&ville=' + ville : '' %>" class="filter-chip <%= type === 'studio' ? 'active' : '' %>">Studios</a>
         </div>
-
         <div class="listings-grid">
             <% logements.forEach(logement => { %>
                 <a href="/logement/<%= logement.id %>" class="listing-card">
