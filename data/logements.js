@@ -85,7 +85,7 @@ const logements = [
       capacite: 4,
       chambres: 2,
       equipements: ["WiFi", "lave-linge" ,"barbecue", "cuisine", "espace extérieur"],
-      coordonnees: { lat: 43.4567, lng: 5.3457 
+      coordonnees: { lat: 44.454880, lng: -1.252270
 
       }
     },
@@ -99,7 +99,7 @@ const logements = [
       capacite: 6,
       chambres: 3,
       equipements: ["WiFi", "Piscine", "cheminée", "cuisine"],
-      coordonnees: { lat: 42.7650, lng: 5.8687 
+      coordonnees: { lat: 43.3744, lng: 2.38197 
 
       }
     },
@@ -113,7 +113,7 @@ const logements = [
       capacite: 2,
       chambres: 1,
       equipements: ["WiFi", "Piscine","Vue sur la cour", "TV avec abonnement standard au câble", "Four à micro-ondes"],
-      coordonnees: { lat: 44.8640, lng: 4.8369 
+      coordonnees: { lat: 50.6270, lng: 3.0586 
 
       }
     },
@@ -127,7 +127,7 @@ const logements = [
       capacite: 10,
       chambres: 5,
       equipements: ["WiFi", , "TV HD 35 pouces", "Piscine privée", "Lave-linge (Gratuit) dans le logement", "Animaux acceptés"],
-      coordonnees: { lat: 42.7640, lng: 4.8367 
+      coordonnees: { lat: 43.2831, lng: 5.3523 
 
       }
     },
@@ -141,7 +141,7 @@ const logements = [
       capacite: 4,
       chambres: 2,
       equipements: ["WiFi", "Piscine", "Télévision", "Accès partagé à la plage", "Cuisine"],
-      coordonnees: { lat: 42.7622, lng: 4.8227 
+      coordonnees: { lat: 42.5470, lng: 3.0290 
 
       }
     },
@@ -155,7 +155,7 @@ const logements = [
       capacite: 2,
       chambres: 1,
       equipements: ["WiFi", "Piscine", "Télévision", "Cuisine", "Parking gratuit dans la rue"],
-      coordonnees: { lat: 45.9620, lng: 4.1357 
+      coordonnees: { lat: 43.4810, lng: -1.5580 
 
       }
     },
@@ -169,7 +169,7 @@ const logements = [
       capacite: 2,
       chambres: 1,
       equipements: ["WiFi", "Climatisation : système split sans évacuation", "Arrière-cour privée", "TV HD avec Apple TV"],
-      coordonnees: { lat: 46.7640, lng: 5.8357 
+      coordonnees: { lat: 43.3333, lng: -0.9667
 
       }
     },
@@ -183,7 +183,7 @@ const logements = [
       capacite: 2,
       chambres: 1,
       equipements: ["WiFi", "Arrière-cour privée – Clôture partielle", "parking", "télévision", "cuisine"],
-      coordonnees: { lat: 42.7848, lng: 4.2357 
+      coordonnees: { lat: 44.6360, lng: -1.1578 
 
       }
     },
@@ -197,7 +197,7 @@ const logements = [
       capacite: 8,
       chambres: 4,
       equipements: ["WiFi", "parking", "Privé : patio ou balcon", "Cheminée", "Cuisine"],
-      coordonnees: { lat: 44.4640, lng: 6.8333 
+      coordonnees: { lat: 47.8982, lng: 0.1267 
 
       }
     },
