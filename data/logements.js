@@ -59,7 +59,8 @@ const logements = [
       lat: 45.7640,
       lng: 4.8357
     }
-  }
+  },
+  {
     id: 5,
     titre: "Maison de campagne - Vignoble",
     description: "Charmante maison au cœur des vignes. Dégustation de vins incluse, piscine, grande terrasse. Parfait pour un séjour œnologique.",
@@ -71,9 +72,10 @@ const logements = [
     equipements: ["Piscine", "Dégustation vins", "WiFi", "Barbecue", "Jardin"],
     coordonnees: {
       lat: 44.8378,
-      lng: -0.5792
+      lng: -0.5792,
     }
-      {
+  },
+  {
       id: 7,
       titre: "Maison au bord de la plage",
       description: "Maison a côter de la plage a même pas 3 minutes a pied.Elle a été renovée en 2022",
@@ -83,9 +85,11 @@ const logements = [
       capacite: 4,
       chambres: 2,
       equipements: ["WiFi", "lave-linge" ,"barbecue", "cuisine", "espace extérieur"],
-      coordonnees: { lat: 43.4567, lng: 5.3457 }
+      coordonnees: { lat: 43.4567, lng: 5.3457 
+
       }
-    {
+    },
+    { 
       id: 8,
       titre: "Maison dans la forêt avec vue panoramique",
       description: "Loin des bruits et de l'agitation de la ville, nichée au cœur d’une forêt de châtaigniers vieille de plus d’un siècle.",
@@ -95,8 +99,10 @@ const logements = [
       capacite: 6,
       chambres: 3,
       equipements: ["WiFi", "Piscine", "cheminée", "cuisine"],
-      coordonnees: { lat: 42.7650, lng: 5.8687 }
-    }
+      coordonnees: { lat: 42.7650, lng: 5.8687 
+
+      }
+    },
     {
       id: 9,
       titre: "Logement entier : appartement Lille",
@@ -107,8 +113,10 @@ const logements = [
       capacite: 2,
       chambres: 1,
       equipements: ["WiFi", "Piscine","Vue sur la cour", "TV avec abonnement standard au câble", "Four à micro-ondes"],
-      coordonnees: { lat: 44.8640, lng: 4.8369 }
-    }
+      coordonnees: { lat: 44.8640, lng: 4.8369 
+
+      }
+    },
     {
       id: 10,
       titre: "Logement entier : villa Marseille",
@@ -119,8 +127,10 @@ const logements = [
       capacite: 10,
       chambres: 5,
       equipements: ["WiFi", , "TV HD 35 pouces", "Piscine privée", "Lave-linge (Gratuit) dans le logement", "Animaux acceptés"],
-      coordonnees: { lat: 42.7640, lng: 4.8367 }
-    }
+      coordonnees: { lat: 42.7640, lng: 4.8367 
+
+      }
+    },
     {
       id: 11,
       titre: "Logement entier : appartement Argelès",
@@ -131,8 +141,10 @@ const logements = [
       capacite: 4,
       chambres: 2,
       equipements: ["WiFi", "Piscine", "Télévision", "Accès partagé à la plage", "Cuisine"],
-      coordonnees: { lat: 42.7622, lng: 4.8227 }
-    }
+      coordonnees: { lat: 42.7622, lng: 4.8227 
+
+      }
+    },
     {
       id: 12,
       titre: "Logement entier : appartement - Biarritz",
@@ -143,8 +155,10 @@ const logements = [
       capacite: 2,
       chambres: 1,
       equipements: ["WiFi", "Piscine", "Télévision", "Cuisine", "Parking gratuit dans la rue"],
-      coordonnees: { lat: 45.9620, lng: 4.1357 }
-    }
+      coordonnees: { lat: 45.9620, lng: 4.1357 
+
+      }
+    },
     {
       id: 13,
       titre: "Cabane perchée - Jurançon",
@@ -155,8 +169,10 @@ const logements = [
       capacite: 2,
       chambres: 1,
       equipements: ["WiFi", "Climatisation : système split sans évacuation", "Arrière-cour privée", "TV HD avec Apple TV"],
-      coordonnees: { lat: 46.7640, lng: 5.8357 }
-    }
+      coordonnees: { lat: 46.7640, lng: 5.8357 
+
+      }
+    },
     {
       id: 14,
       titre: "Logement entier : appartement - La Teste-de-Buch",
@@ -167,8 +183,10 @@ const logements = [
       capacite: 2,
       chambres: 1,
       equipements: ["WiFi", "Arrière-cour privée – Clôture partielle", "parking", "télévision", "cuisine"],
-      coordonnees: { lat: 42.7848, lng: 4.2357 }
-    }
+      coordonnees: { lat: 42.7848, lng: 4.2357 
+
+      }
+    },
     {
       id: 15,
       titre: "Logement entier : villa - Fillé",
@@ -179,8 +197,11 @@ const logements = [
       capacite: 8,
       chambres: 4,
       equipements: ["WiFi", "parking", "Privé : patio ou balcon", "Cheminée", "Cuisine"],
-      coordonnees: { lat: 44.4640, lng: 6.8333 }
-    }
+      coordonnees: { lat: 44.4640, lng: 6.8333 
+
+      }
+    },
+  
 ];
 
 module.exports = logements;
