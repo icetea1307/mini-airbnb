@@ -1,6 +1,4 @@
-/* =========================
-   STYLES GLOBAUX AMÉLIORÉS
-========================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -43,9 +41,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* =========================
-   HEADER / NAVIGATION PREMIUM
-========================= */
+
 .header {
     position: sticky;
     top: 0;
@@ -189,9 +185,6 @@ body {
     box-shadow: var(--shadow-medium);
 }
 
-/* =========================
-   PAGE D'ACCUEIL - GRILLE PREMIUM
-========================= */
 .main-container {
     max-width: 1760px;
     margin: 0 auto;
@@ -400,9 +393,6 @@ body {
     font-weight: 500;
 }
 
-/* =========================
-   PAGE DE DÉTAIL PREMIUM
-========================= */
 .detail-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -541,14 +531,19 @@ body {
     font-size: 16px;
     font-weight: 500;
 }
+.hote-section {
+display: flex;
+align-items: center;
+gap: 12px;
+margin: 1rem 0;
+}
 
-.host-avatar {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: var(--shadow-medium);
-    border: 3px solid white;
+.hote-avatar {
+width: 64px;
+height: 64px;
+border-radius: 50%;
+object-fit: cover;
+border: 2px solid var(--primary-color);
 }
 
 .amenities-section {
@@ -590,9 +585,6 @@ body {
     font-weight: 400;
 }
 
-/* =========================
-   CARTE DE RÉSERVATION PREMIUM
-========================= */
 .booking-card {
     position: sticky;
     top: 120px;
@@ -737,9 +729,17 @@ body {
     font-size: 18px;
 }
 
-/* =========================
-   FOOTER PREMIUM
-========================= */
+.map-section {
+    margin: 40px auto;
+    max-width: 1000px;
+    padding: 20px;
+}
+.map-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+
 .footer {
     background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
     color: white;
@@ -802,7 +802,7 @@ body {
 .listing-card:nth-child(6) { animation-delay: 0.6s; }
 
 /* =========================
-   RESPONSIVE AMÉLIORÉ
+RESPONSIVE AMÉLIORÉ
 ========================= */
 @media (max-width: 1024px) {
     .content-wrapper {
@@ -865,7 +865,7 @@ body {
 }
 
 /* =========================
-   EFFETS SPÉCIAUX
+EFFETS SPÉCIAUX
 ========================= */
 .listing-card::after {
     content: '';
@@ -926,4 +926,51 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--primary-dark);
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    flex-direction: column;
+}
+
+.lightbox.show {
+    display: flex;
+}
+
+.lightbox-img {
+    max-width: 90vw;
+    max-height: 80vh;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+
+.lightbox-controls {
+    margin-top: 15px;
+}
+
+.lightbox-controls button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 0 20px;
+    user-select: none;
 }

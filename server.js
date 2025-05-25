@@ -21,11 +21,12 @@ app.get('/', (req, res) => {
     );
   }
 
-  if (type && type.trim() !== "") {
-    filtres = filtres.filter(l =>
-      l.type.toLowerCase() === type.toLowerCase()
-    );
-  }
+if (type && type.trim() !== "") {
+  filtres = filtres.filter(l =>
+    l.type && l.type.toLowerCase() === type.toLowerCase()
+  );
+}
+
 
   res.render('accueil', {
     logements: filtres,
